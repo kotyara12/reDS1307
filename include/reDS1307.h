@@ -38,7 +38,7 @@ class reDS1307 {
     reDS1307(i2c_port_t numI2C, uint8_t addrI2C);
     ~reDS1307();
 
-    bool start(bool start);
+    bool start(bool start = true);
     bool is_running();
 
     bool get_time(struct tm *time);
