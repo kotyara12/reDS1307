@@ -54,7 +54,7 @@ class reDS1307 {
     bool read_rom(uint8_t offset, uint8_t *buf, uint8_t len);
     bool write_rom(uint8_t offset, uint8_t *buf, uint8_t len);
   private:
-    i2c_port_t _numI2C = 0; 
+    i2c_port_t _numI2C = I2C_NUM_0; 
     uint8_t _addrI2C = 0;
 
     bool read_register(uint8_t reg, uint8_t *val, uint8_t size);
